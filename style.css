@@ -29,6 +29,10 @@ nav {
     cursor: pointer;
 }
 
+#portofolio_logo {
+    cursor: pointer;
+}
+
 .navbar-nav {
     margin-top: 10px;
 }
@@ -542,6 +546,14 @@ footer > .sns-link > a {
 
     .skill-list {
         margin-right: 50px;
+    }
+
+    .work-item {
+        width: 80vw;
+    }
+
+    .work-item > a > img {
+        width: 80vw;
     }
 
     .service-wrapper {
