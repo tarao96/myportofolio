@@ -4,23 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>My Portfolio Site</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-logo">
-                <p id="portofolio_logo">Portofolio Site</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
+            <a class="navbar-brand text-white col-9" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse col-3 ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <p class="nav-link text-white" id="profile_nav">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="skill_nav">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="work_nav">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="service_nav">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="contact_nav">Contact</a>
+                </li>
+                <li class="nav-item dropdown d-none">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-white" href="#">Action</a>
+                    <a class="dropdown-item text-white" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-white" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul>
-                <li id="profile_nav">Profile</li>
-                <li id="skill_nav">Skill</li>
-                <li id="work_nav">Work</li>
-                <li id="service_nav">Service</li>
-                <li id="contact_nav">Contact</li>
-            </ul>
         </nav>
         <!-- <img src="images/header-img.jpg" class="header-img" alt="header_image">
         <div class="header-content">
@@ -72,7 +98,7 @@
             <div class="skill-title">
                 <h2>Skill</h2>
             </div>
-            <ul>
+            <ul class="skill-list">
                 <li class="slideContsL">
                     <div class="skill-item">
                         <div class="skill-item-content">
@@ -90,7 +116,7 @@
                             <div class="skill-item-logo">
                                 <img src="images/CSS.png" alt="CSS_icon">
                             </div>
-                            <h3>CSS</h3>
+                            <h3 class="">CSS</h3>
                             <a target="_blank" href="https://icons8.com/icon/38272/css3">CSS3</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
                         </div>
                     </div>
@@ -271,22 +297,24 @@
             <div class="contact-title">
                 <h2>Contact</h2>
             </div>
-            <div class="contact-form">
-                <div class="name">
-                    <label for="name">お名前</label>
-                    <span>必須</span>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <div class="name">
+                        <label for="name">お名前</label>
+                        <span>必須</span>
+                    </div>
+                    <input type="text" class="form-name">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <span>必須</span>
+                    </div>
+                    <input type="text" class="form-email">
+                    <div class="content">
+                        <label for="content">お問い合わせ内容</label>
+                    </div>
+                    <textarea class="content-form" name="content" cols="70" rows="10"></textarea>
+                    <input type="submit" class="submit-form" value="送信">
                 </div>
-                <input type="text" class="form-name">
-                <div class="email">
-                    <label for="email">Email</label>
-                    <span>必須</span>
-                </div>
-                <input type="text" class="form-email">
-                <div class="content">
-                    <label for="content">お問い合わせ内容</label>
-                </div>
-                <textarea name="content" cols="70" rows="10"></textarea>
-                <input type="submit" class="submit-form" value="送信">
             </div>
         </div>
     </main>
@@ -296,6 +324,9 @@
             <a href="https://github.com/tarao96"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.net.min.js"></script>
     <script
@@ -373,7 +404,7 @@
                 var elem_pos = $(this).offset().top;
             
                 //どのタイミングでフェードインさせるか
-                if (scroll_top >= elem_pos - window_h + 100) {
+                if (scroll_top >= elem_pos - window_h + 50) {
                 $(this).addClass("fadein");
                 } else {
                 $(this).removeClass("fadein");
@@ -384,7 +415,7 @@
                 var elem_pos = $(this).offset().top;
             
                 //どのタイミングでフェードインさせるか
-                if (scroll_top >= elem_pos - window_h + 100) {
+                if (scroll_top >= elem_pos - window_h + 50) {
                 $(this).addClass("fadein");
                 } else {
                 $(this).removeClass("fadein");
@@ -395,7 +426,7 @@
                 var elem_pos = $(this).offset().top;
             
                 //どのタイミングでフェードインさせるか
-                if (scroll_top >= elem_pos - window_h + 100) {
+                if (scroll_top >= elem_pos - window_h + 50) {
                 $(this).addClass("fadein");
                 } else {
                 $(this).removeClass("fadein");
