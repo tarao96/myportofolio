@@ -377,8 +377,9 @@ nav {
 }
 
 .contact-form {
-    width: 35%;
+    width: 80vw;
     margin: 50px auto;
+    padding-left: 40px;    
 }
 
 .contact-form > label {
@@ -392,27 +393,41 @@ nav {
 
 .contact-form > .form-name {
     display: block;
-    width: 70vw;
+    margin:0 auto;
+    width: 40vw;
     height: 30px;
 }
 
 .contact-form > .form-email {
     display: block;
-    width: 70vw;
+    margin: 0 auto;
+    width: 40vw;
     height: 30px;
+}
+
+.contact-form > .content-form {
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    height: 200px;
 }
 
 .contact-form > .submit-form {
     display: block;
     margin: 20px auto;
-    width: 30vw;
+    width: 10vw;
     height: 40px;
+}
+
+.content {
+    text-align: center;
 }
 
 .name {
     display: flex;
-    gap: 0 30px;
+    gap: 0 15px;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 .name > span {
@@ -423,8 +438,9 @@ nav {
 
 .email {
     display: flex;
-    gap: 0 30px;
+    gap: 0 15px;
     margin: 10px 0;
+    justify-content: center;
 }
 
 .email > span {
@@ -545,10 +561,22 @@ footer > .sns-link > a {
     }
 
     .contact-form {
-        width: 80%;
+        padding-left: 0px;
     }
 
-    .content-form {
+    .contact-form > .form-name {
         width: 70vw;
+    }
+
+    .contact-form > .form-email {
+        width: 70vw;
+    }
+
+    .contact-form > .content-form {
+        width: 70vw;
+    }
+
+    .contact-form > .submit-form {
+        width: 30vw;
     }
 }
