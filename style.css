@@ -1,5 +1,6 @@
 /* 全体 */
 body {
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue",
@@ -21,52 +22,23 @@ a {
 
 /* ナビゲーションバー */
 nav {
-    width: 100%;
-    height: 70px;
-    background-color: dimgray;
-    padding-top: 5px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 10000;
-    opacity: 0.8;
+    width: 100vw;
 }
 
-nav > .nav-logo {
-    display: flex;
-    align-items: center;
-}
-
-nav > .nav-logo > p {
-    color: #fff;
-    font-family: 'Caveat', cursive;
-    font-size: 1.5em;
-    margin: 0;
-    margin-bottom: 5px;
+.nav-link {
     cursor: pointer;
 }
 
-nav > .nav-logo > p:hover {
-    color: aquamarine;
+.navbar-nav {
+    margin-top: 10px;
 }
 
-nav > ul {
-    display: flex;
-    justify-content: right;
-}
-
-nav > ul > li {
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
-    cursor: pointer;
-}
-
-nav > ul > li:hover {
-    color: aquamarine;
+#net {
+    width: 100vw;
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 500px;
 }
 
 /* ヘッダー */
@@ -80,7 +52,7 @@ nav > ul > li:hover {
 .header-content {
     position: absolute;
     font-weight: bold;
-    top: 50%;
+    top: 60%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -99,12 +71,6 @@ nav > ul > li:hover {
     font-size: 3em;
     color: #fff;
     font-family: 'Caveat', cursive;
-}
-
-#net {
-    display: grid;
-    place-items: center;
-    height: 500px;
 }
 
 .slideContsL {
@@ -140,6 +106,7 @@ nav > ul > li:hover {
 }
 
 .profile-wrapper {
+    margin-top: 50px;
     display: flex;
     gap: 0 50px;
 }
@@ -215,6 +182,7 @@ nav > ul > li:hover {
 .skill {
     background-color: black;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .skill-title {
@@ -232,13 +200,14 @@ nav > ul > li:hover {
     color: #fff;
 }
 
-.skill > ul {
+.skill-list {
     width: 80%;
     margin: 50px auto;
     color: black;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    margin-right: 30px;
 }
 
 .skill > ul > li {
@@ -256,6 +225,11 @@ nav > ul > li:hover {
 
 .skill-item-content {
     text-align: center;
+}
+
+.skill-item-content > h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
 }
 
 /* Work */
@@ -284,11 +258,11 @@ nav > ul > li:hover {
     text-align: center;
     position: relative;
     overflow:hidden;
-    width: 600px;
+    width: 60vw;
 }
 
 .work-item > a > img {
-    width: 100%;
+    width: 60vw;
 }
 
 .caption {
@@ -299,7 +273,7 @@ nav > ul > li:hover {
     color:#fff;
     padding: 10px;
     text-align: center;
-    width: 100%;
+    width: 60vw;
     height: 100%;
 }
 
@@ -322,6 +296,10 @@ nav > ul > li:hover {
     margin: 0;
     font-size: 2em;
     color: #fff;
+}
+
+.title > h3 {
+    font-size: 1.4em;
 }
 
 .service-wrapper {
@@ -379,6 +357,11 @@ nav > ul > li:hover {
     color: #fff;
 }
 
+.contact-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
 .contact-title {
     padding-top: 20px;
     padding-bottom: 5px;
@@ -409,20 +392,20 @@ nav > ul > li:hover {
 
 .contact-form > .form-name {
     display: block;
-    width: 500px;
+    width: 70vw;
     height: 30px;
 }
 
 .contact-form > .form-email {
     display: block;
-    width: 500px;
+    width: 70vw;
     height: 30px;
 }
 
 .contact-form > .submit-form {
     display: block;
     margin: 20px auto;
-    width: 60px;
+    width: 30vw;
     height: 40px;
 }
 
@@ -485,4 +468,87 @@ footer > .sns-link > a {
     background-color: #FFFFFF;
     color: #F20505;
     font-size: 14px;
+}
+
+/* スマホ用デザイン */
+@media screen and (max-width: 480px) {
+
+    .header-content > h1 {
+        font-size: 3em;
+    }
+
+    .header-content > p {
+        font-size: 1.5em;
+    }
+
+    .profile-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-img {
+        margin: auto;
+    }
+
+    .profile-img > img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .profile-content {
+        margin: 30px auto;
+        width: 75vw;
+    }
+
+    .profile-content > .profile-introduce > h3 {
+        font-size: 1.4em;
+    }
+
+    .profile-content > .profile-introduce > p {
+        font-size: 0.8em;
+    }
+
+    .profile-content > .profile-hobby > h3 {
+        font-size: 1.4em;
+    }
+
+    .profile-content > .profile-hobby > p {
+        font-size: 0.8em;
+    }
+
+    .profile-content > .profile-certification > h3 {
+        font-size: 1.4em;
+    }
+
+    .profile-content > .profile-certification > p {
+        font-size: 0.8em;
+    }
+
+    .skill-list {
+        margin-right: 50px;
+    }
+
+    .service-wrapper {
+        flex-direction: column;
+    }
+
+    .coding {
+        margin-left: 35px;
+    }
+
+    .wordpress {
+        margin-left: 35px;
+    }
+
+    .web_development {
+        margin-left: 35px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .content-form {
+        width: 70vw;
+    }
 }
