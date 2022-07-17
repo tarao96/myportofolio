@@ -37,7 +37,7 @@ nav {
     margin-top: 10px;
 }
 
-#net {
+#bird {
     width: 100vw;
     position: relative;
     display: grid;
@@ -74,6 +74,12 @@ nav {
 .header-content > p {
     font-size: 3em;
     color: #fff;
+    font-family: 'Caveat', cursive;
+}
+
+#portofolio_logo {
+    font-size: 1.4em;
+    margin-top: 10px;
     font-family: 'Caveat', cursive;
 }
 
