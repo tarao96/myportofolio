@@ -38,7 +38,7 @@ nav {
 }
 
 #bird {
-    width: 100vw;
+    width: 99vw;
     position: relative;
     display: grid;
     place-items: center;
@@ -216,8 +216,8 @@ nav {
     color: black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
-    margin-right: 30px;
 }
 
 .skill > ul > li {
